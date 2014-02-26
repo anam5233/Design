@@ -1,10 +1,12 @@
+
+/* start container */
 .container{
     width:500px;
     margin:0 auto;
     padding:2em;
     border:1px solid #ccc;
 }
-
+/* box under container */
 .box{
     background-color:tomato;
     color:white;
@@ -19,6 +21,7 @@
     color:tomato;
 }
 
+/* second container div */
 #newsletter{
     text-align:center;
 }
