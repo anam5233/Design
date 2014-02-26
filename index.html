@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Stylesheet links -->
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <!-- start the first box -->    
+    <div class="container animated fadeInDown">
+        <div class="box animated bounceIn">
+            Hide this box a cool effect
+        </div>
+    </div>
+    
+    <!-- start the second box -->    
+    
+    <div class="container animated lightSpeedIn">
+        <form action="#" id="newsletter">
+            <input type="text">
+            
+            <button type="button">Join the newletter</button>
+        </form>
+    </div>
+    
+    <!-- Load jQuery -->
+    
+    <script src="jquery-2.0.3.min.js"></script>
+    <script>
+        $('.box').on('click', function(){
+            $('.container').addClass('fadeOutUp');
+        });
+        
+        $('#newsletter button').on('click', function(){
+            $(this).addClass('animated shake');
+        });
+        
+    </script>
+</body>
+</html>
